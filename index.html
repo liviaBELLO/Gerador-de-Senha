@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href = "css/style.css">
+  <title>Gerador de Senhas</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h1 class="title">Gerador de senhas aleatórias</h1>
+      <p class="desc">Proteja suas senhas de internet criando senhas fortes e seguras.</p>
+
+      <div class="aplicacao">
+
+        <div class="textArea">
+        <span class="subtitle">Quantidade de senhas</span>
+        <input type="number" id="pwdQuantity" max="10">
+      </div>
+        <span class="subtitle">Quantidade de caracteres</span>
+
+        <div class="content_range">
+          <span id="pwdRangeStatus">15</span>
+          <input type="range" id="pwdRange" min="1" max="20" >
+        </div>
+
+        <span class="subtitle">Caracteres utilizados</span>
+
+        <div id="pwdInputsChars">
+          <div class="input_numeros">
+          <input type="checkbox" id="numbers" name="numbers" checked>
+          <label>Números</label>
+        </div>
+          
+
+
+          <div class="input_minuscula">
+            <input type="checkbox" id="lowercase" name="lowercase" checked>
+            <label>Letras Minusculas</label>
+          </div>
+
+            <div class="input_maiuscula">
+            <input type="checkbox" id="uppercase" name="uppercase" checked>
+            <label>Letras maiuscula</label>
+          </div>
+         
+
+          <div class="input_especial">
+            <input type="checkbox" id="special" name="special" checked>
+            <label>Caracteres especiais</label>
+        </div>
+
+        <div class="textarea">
+          <textarea id="pwdContent" rows="10" cols="50"></textarea>
+        </div>
+
+        <button id="btnGenerate" type="button">Gerar</button>
+        <button id="btnClear" type="button">Limpar</button>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
